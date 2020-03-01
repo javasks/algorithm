@@ -9,6 +9,14 @@ import java.util.List;
  */
 public class ThreeNumberSum {
 
+    /**
+     *
+     * @param array
+     * @param targetSum
+     * @return
+     * Given an array and targetSum find all posible combination of 3 digits which produce target sum.
+     * Time complexity is nLog(n) since we are sorting the array
+     */
 
     static List<Integer[]> threeNumberSum(int[] array, int targetSum) {
         Arrays.sort(array);

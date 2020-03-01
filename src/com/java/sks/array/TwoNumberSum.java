@@ -13,7 +13,8 @@ public class TwoNumberSum {
     /**
      * @param array
      * @param targetSum
-     * @return Time complexity o(n^2)
+     * @return
+     * Time complexity o(n^2)
      */
     public static int[] twoNumberSumON2(int[] array, int targetSum) {
         for (int i = 0; i < array.length - 1; i++) {
@@ -30,7 +31,8 @@ public class TwoNumberSum {
     /**
      * @param array
      * @param targetSum
-     * @return Time complexity o(n) and Space Complexity O(n)
+     * @return
+     * Time complexity o(n) and Space Complexity O(n)
      */
     static int[] twoNumberSumONON(int[] array, int targetSum) {
         Map<Integer, Boolean> hashMap = new HashMap<>();
@@ -49,7 +51,8 @@ public class TwoNumberSum {
     /**
      * @param array
      * @param targetSum
-     * @return Time Complexity O(nLog(n)) Space complexity O(1)
+     * @return
+     * Time Complexity O(nLog(n)) Space complexity O(1)
      */
 
     static int[] twoNumberSumNON(int[] array, int targetSum) {

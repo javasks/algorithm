@@ -14,6 +14,7 @@ public class SmallestDifference {
      * @param array2
      * @return
      * Given Two array, find smallest difference
+     * Time complexity would be 0(nLogN)+o(mlogM)
      */
     static int[] smallestDifference(int[] array1, int[] array2) {
         Arrays.sort(array1);
