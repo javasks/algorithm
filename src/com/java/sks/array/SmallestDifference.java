@@ -2,7 +2,19 @@ package com.java.sks.array;
 
 import java.util.Arrays;
 
+/**
+ * @author sandeepsingh
+ */
+
 public class SmallestDifference {
+
+    /**
+     *
+     * @param array1
+     * @param array2
+     * @return
+     * Given Two array, find smallest difference
+     */
     static int[] smallestDifference(int[] array1, int[] array2) {
         Arrays.sort(array1);
         Arrays.sort(array2);
