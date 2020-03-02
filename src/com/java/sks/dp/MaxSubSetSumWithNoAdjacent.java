@@ -5,10 +5,8 @@ package com.java.sks.dp;
  */
 public class MaxSubSetSumWithNoAdjacent {
     /**
-     *
      * @param array
-     * @return
-     * This method will have o(n) time complexity and O(n) space Complexity we can make it better in terms
+     * @return This method will have o(n) time complexity and O(n) space Complexity we can make it better in terms
      * of space complexity since we are using only i-1 and i-2 positions.
      */
     static int maxSubsetSumWithNoAdjacent(int[] array) {
@@ -27,6 +25,30 @@ public class MaxSubSetSumWithNoAdjacent {
             maxSumsArray[i] = Math.max(maxSumsArray[i - 1], maxSumsArray[i - 2] + maxSumsArray[i]);
         }
         return maxSumsArray[array.length - 1];
+    }
+
+    /**
+     * @param array
+     * @return This method will have same time complexity but o(1) space complexity.
+     */
+    static int maxSubsetSumWithNoAdjacentO1Space(int[] array) {
+
+        if (array.length == 0)
+            return 0;
+        else if (array.length == 1) {
+            return array[0];
+        }
+        int second = array[0];
+        int first = Math.max(array[0], array[1]);
+        for (int i = 2; i < array.length; i++) {
+            /**
+             * This is the formula which we derived based on the pattern
+             */
+            int currentSUm = Math.max(first, second + array[i]);
+            second = first;
+            first = currentSUm;
+        }
+        return first;
     }
 
     public static void main(String[] args) {
