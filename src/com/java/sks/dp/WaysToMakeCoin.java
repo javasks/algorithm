@@ -34,6 +34,13 @@ public class WaysToMakeCoin {
                  * contribute to the total # of ways to make change at this sub problem target
                  * amount)
                  */
+                /*
+                table[row][col]=table[row-1][col]
+                                   +
+                                table[row][col-coins[row-1]]
+
+
+                 */
                 int withoutThisCoin = ways[i - 1][j];
                 int withThisCoin = currentCoinValue <= j ? ways[i][j - currentCoinValue] : 0;
 
