@@ -1,4 +1,4 @@
-package com.java.sks.dp.coinProblems;
+package com.java.sks.dp.coinProblems.waysCoinChange;
 
 public class WaysToMakeCoin {
 
