@@ -2,6 +2,10 @@ package com.java.sks.sorting;
 
 import java.util.Arrays;
 
+/**
+ * @Author : Sandeep Singh
+ */
+
 public class QuickSort {
 
     public static void quicksort(int arr[]) {

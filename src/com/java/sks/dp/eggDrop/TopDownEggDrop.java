@@ -1,8 +1,8 @@
 package com.java.sks.dp.eggDrop;
 
 
-/*
-@Author Sandeep Singh
+/**
+ * @Author : Sandeep Singh
  */
 
 

@@ -1,5 +1,9 @@
 package com.java.sks.dp.coinProblems.waysCoinChange;
 
+/**
+ * @Author : Sandeep Singh
+ */
+
 public class WaysToMakeCoin {
 
     public static int waysToMakeCoin(int target, int[] coins) {

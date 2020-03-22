@@ -1,5 +1,9 @@
 package com.java.sks.dp.coinProblems.waysCoinChange;
 
+/**
+ * @Author : Sandeep Singh
+ */
+
 public class NoOfWaysToMakeChange {
     public static int change(int amount, int[] coins) {
         int[][] dp = new int[coins.length + 1][amount + 1];
