@@ -1,4 +1,4 @@
-package com.java.sks.dp;
+package com.java.sks.dp.coinProblems;
 
 public class NoOfWaysToMakeChange {
     public static int change(int amount, int[] coins) {
