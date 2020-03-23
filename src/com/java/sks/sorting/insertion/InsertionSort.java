@@ -1,4 +1,4 @@
-package com.java.sks.sorting;
+package com.java.sks.sorting.insertion;
 
 import java.util.Arrays;
 
